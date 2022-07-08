@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+}
+.cabecera{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+.cuadro{
+    border: 2px solid  black;
+     margin-top: 15px;
+}
+.formulario{
+    margin-bottom: 13px;
+}
+.table{
+    margin-top: 15px;
+    width: 100%;
+}
+.table caption{
+    margin-bottom: 5px;
+
+}

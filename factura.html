@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <title>Gym XYS</title>
+  </head>
+  <body>
+    <header class="cabecera">
+      <h1>Gym XYS</h1>
+    </header>
+    <section>
+      <section class="cuadro">
+        <div class="reglas">
+          <h2>Reglas</h2>
+          <ul>
+            <li>
+              El contrato es por un año y tiene el precio de $50 por mes, si el
+              cliente paga todo el año al inicio del contrato tiene un descuento
+              del 10%.
+            </li>
+            <li>
+              El contrato puede ser por 3 meses y tiene el costo de $70 por mes,
+              si el cliente paga todo el año al inicio del contrato tiene un
+              descuento del 5%.
+            </li>
+            <li>
+              El contrato puede ser por 1 mes y tiene el costo de $80 al mes
+            </li>
+          </ul>
+        </div>
+        <form action="" id="formDetalle" class="formulario">
+          <fieldset>
+            <label for="">Fecha</label>
+            <input type="date" name="" id="inputFecha" />
+            <label for="">Nombre</label>
+            <input type="text" name="" id="inputNombre" />
+            <label for="">Numero de Cliente</label>
+            <input type="number" name="" id="inputCliente" />
+            <label for="">Sexo</label>
+            <select name="" id="inputSexo">
+              <option value="0">--seleccion--</option>
+            </select>
+            <label for="">Edad</label>
+            <input type="number" name="" id="inputEdad" />
+            <label for="">Etnia</label>
+            <input type="text" name="" id="inputEtnia" />
+            <label for="">Estatura</label>
+            <input type="number" name="" id="inputEstatura" />
+            <label for="">Ingreso Economico</label>
+            <input type="number" name="" id="inputEconomico" />
+            <button type="submit" class="btn">Agregar</button>
+          </fieldset>
+        </form>
+      </section>
+      <table border="2" class="table">
+        <caption>
+          <strong>Factura</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Nombre</th>
+            <th>Numero de Cliente</th>
+            <th>Sexo</th>
+            <th>Edad</th>
+            <th>Etnia</th>
+            <th>Estatura</th>
+            <th>Ingreso Economico</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpoTabla">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <script src="validacion.js"></script>
+  </body>
+</html>
