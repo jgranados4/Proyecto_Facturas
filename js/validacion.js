@@ -11,46 +11,46 @@ const inputEconomico = document.getElementById("inputEconomico");
 const cuerpoTabla = document.getElementById("cuerpoTabla");
 let arreglo = [];
 //opcion
-let arreglosexo=[
+let arreglosexo = [
   {
-    id:1,
-    nombre:'Hombre'
+    id: 1,
+    nombre: "Hombre",
   },
   {
-    id:2,
-    nombre:'Mujer'
+    id: 2,
+    nombre: "Mujer",
   },
-]
+];
 //La seleccion llenada
-const llenar =()=>{
-  arreglosexo.forEach((p)=>{
-    const opcion=document.createElement('option')
-     opcion.value=p.id
-     opcion.innerText=p.nombre;
-     inputSexo.appendChild(opcion);
-  })
-}
+const llenar = () => {
+  arreglosexo.forEach((p) => {
+    const opcion = document.createElement("option");
+    opcion.value = p.id;
+    opcion.innerText = p.nombre;
+    inputSexo.appendChild(opcion);
+  });
+};
 llenar();
 
-const getProductoById=(id)=>{
-  const objDetalle=arreglosexo.find((p)=>{
-    if(p.id==+id){
+const getNombreProductoById = (id) => {
+  const objDetalle = arreglosexo.find((p) => {
+    if (p.id == +id) {
       return p;
     }
-  })
+  });
   return objDetalle.nombre;
-}
+};
 
 //agregar a la Tabla
 const redistabla = () => {
-    cuerpoTabla.innerHTML="";
+  cuerpoTabla.innerHTML = "";
   arreglo.forEach((detalle) => {
     let fila = document.createElement("tr");
     fila.innerHTML = `
         <td>${detalle.Fecha}</td>
         <td>${detalle.Nombre}</td>
         <td>${detalle.Cliente}</td>
-        <td>${getProductoById(detalle.Sexo)}</td>
+        <td>${getNombreProductoById(detalle.Sexo)}</td>
         <td>${detalle.Edad}</td>
         <td>${detalle.Etnia}</td>
         <td>${detalle.Estatura}</td>
@@ -66,7 +66,7 @@ const redistabla = () => {
 
     // tdEliminar.appendChild(botonEliminar);
     // fila.appendChild(tdEliminar)
-     cuerpoTabla.appendChild(fila);
+    cuerpoTabla.appendChild(fila);
   });
 };
 
@@ -81,16 +81,16 @@ formDetalle.onsubmit = (e) => {
     Etnia: inputEtnia.value,
     Estatura: inputEstatura.value,
     Economico: inputEconomico.value,
-  }
+  };
   arreglo.push(objDetalle);
   redistabla();
 };
 
-const eliminarDetalleById = (id) => {
-  arregloDea = arreglo.filter((detalle) => {
-    if (+id !== +detalle.Cliente) {
-      return detalle;
-    }
-  });
-  redistabla();
-};
+// const eliminarDetalleById = (id) => {
+//   arregloDea = arreglo.filter((detalle) => {
+//     if (+id !== +detalle.Cliente) {
+//       return detalle;
+//     }
+//   });
+//   redistabla();
+// };
