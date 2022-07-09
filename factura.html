@@ -35,22 +35,22 @@
           <fieldset>
             <label for="">Fecha</label>
             <input type="date" name="" id="inputFecha" />
-            <label for="">Nombre</label>
-            <input type="text" name="" id="inputNombre" />
+            <label for="">Nombre y Apellido</label>
+            <input type="text" name="" id="inputNombre" maxlength="20" />
             <label for="">Numero de Cliente</label>
-            <input type="number" name="" id="inputCliente" />
+            <input type="number" name="" id="inputCliente" min="10" max="1000" />
             <label for="">Sexo</label>
             <select name="" id="inputSexo">
-              <option value="0">--seleccion--</option>
+              <option value="0">--seleccionar--</option>
             </select>
             <label for="">Edad</label>
-            <input type="number" name="" id="inputEdad" />
+            <input type="number" name="" id="inputEdad" min="10" max="1000" />
             <label for="">Etnia</label>
-            <input type="text" name="" id="inputEtnia" />
+            <input type="text" name="" id="inputEtnia" maxlength="10"/>
             <label for="">Estatura</label>
-            <input type="number" name="" id="inputEstatura" />
+            <input type="number" name="" id="inputEstatura"  step="any" min="10" max="100" />
             <label for="">Ingreso Economico</label>
-            <input type="number" name="" id="inputEconomico" />
+            <input type="number" name="" id="inputEconomico" step="any" min="10" max="1000" />
             <button type="submit" class="btn">Agregar</button>
           </fieldset>
         </form>
@@ -73,16 +73,11 @@
         </thead>
         <tbody id="cuerpoTabla">
           <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
           </tr>
         </tbody>
       </table>
     </section>
-    <script src="validacion.js"></script>
+    <script src="./js/validacion.js"></script>
+    <script src="./js/form.js"></script>
   </body>
 </html>
