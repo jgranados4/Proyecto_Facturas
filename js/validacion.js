@@ -8,6 +8,7 @@ const inputEdad = document.getElementById("inputEdad");
 const inputEtnia = document.getElementById("inputEtnia");
 const inputEstatura = document.getElementById("inputEstatura");
 const inputEconomico = document.getElementById("inputEconomico");
+const inputTotal=document.getElementById('inputTotal');
 const cuerpoTabla = document.getElementById("cuerpoTabla");
 let arreglo = [];
 //opcion
@@ -55,6 +56,7 @@ const redistabla = () => {
         <td>${detalle.Etnia}</td>
         <td>${detalle.Estatura}</td>
         <td>${detalle.Economico}</td>
+        <td>${detalle.Total}</td>
         `;
     // let tdEliminar = document.createElement("td");
     // let botonEliminar = document.createElement("button");
@@ -81,6 +83,7 @@ formDetalle.onsubmit = (e) => {
     Etnia: inputEtnia.value,
     Estatura: inputEstatura.value,
     Economico: inputEconomico.value,
+    Total:inputTotal.value,
   };
   arreglo.push(objDetalle);
   redistabla();

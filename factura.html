@@ -34,41 +34,49 @@
         <form action="" id="formDetalle" class="formulario">
           <fieldset>
             <label for="">Fecha</label>
-            <input type="date" name="" id="inputFecha" />
+            <input type="date" name="Fecha" id="inputFecha" />
             <label for="">Nombre y Apellido</label>
-            <input type="text" name="" id="inputNombre" maxlength="20" />
+            <input type="text" name="Nombre" id="inputNombre" maxlength="20" />
             <label for="">Numero de Cliente</label>
-            <input type="number" name="" id="inputCliente" min="2" max="10000" />
+            <input type="number" name="NumeroCliente" id="inputCliente" min="2" max="10000" />
             <label for="">Sexo</label>
-            <select name="" id="inputSexo">
+            <select name="" id="inputSexo" name="Sexo">
               <option value="0">--seleccionar--</option>
             </select>
             <label for="">Edad</label>
-            <input type="number" name="" id="inputEdad" min="10" max="1000" />
+            <input type="number" name="Edad" id="inputEdad" min="10" max="1000" />
             <label for="">Etnia</label>
-            <input type="text" name="" id="inputEtnia" maxlength="10"/>
+            <input type="text" name="Etnia" id="inputEtnia" maxlength="10"/>
             <label for="">Estatura</label>
-            <input type="number" name="" id="inputEstatura"  step="any" min="2" max="100" />
+            <input type="number" name="Estatura" id="inputEstatura"  step="any" min="1" max="100" />
             <label for="">Ingreso Economico</label>
-            <input type="number" name="" id="inputEconomico" step="any" min="2" max="1000"  />
-            <input type="submit"  id="boton" disabled>Agregar</input>
+            <input type="number" name="IngresoEconomico" id="inputEconomico" step="any" min="2" max="1000"  />
+            <label for="">Descuento y El total</label>
+            <select name="" id="inputTotal">
+              <option value="0">--seleccionar--</option>
+              <option value="$540">$540</option>
+              <option value="$199.5">$199.5</option>
+              <option value="$80">$80</option>
+            </select>
+            <input type="submit"  id="boton" disabled >Agregar</buttoinput>
           </fieldset>
         </form>
       </section>
-      <table border="2" class="table">
+      <table border="2" class="table" id="datos">
         <caption>
           <strong>Factura</strong>
         </caption>
         <thead>
           <tr>
-            <th>Fecha</th>
-            <th>Nombre</th>
-            <th>Numero de Cliente</th>
-            <th>Sexo</th>
-            <th>Edad</th>
-            <th>Etnia</th>
-            <th>Estatura</th>
-            <th>Ingreso Economico</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Nombre y Apellido</th>
+            <th scope="col">Numero de Cliente</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Etnia</th>
+            <th scope="col">Estatura</th>
+            <th scope="col">Ingreso Economico</th>
+            <th scope="col">Total</th>
           </tr>
         </thead>
         <tbody id="cuerpoTabla">
