@@ -5,20 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym XYS</title>
+	<link rel="stylesheet" href="estilos/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <header class="cabecera">
+    <header class="cabecera" style="width: 100%; height: 80px; ">
         <h1>Gym XYS</h1>
     </header>
-    <section>
-        <h2>Sucursales</h2>
-        <ul class="Lista">
-            <li><a href="factura.html">Guayaquil</a></li>
-            <li> <a href="factura.html">Cuenca</a> </li>
-            <li> <a href="factura.html">Quito</a> </li>
-            <li> <a href="factura.html">Machala</a> </li>
-        </ul>
+    <section class="contenedor">
+		<div class="row d-flex justify-content-center align-items-center h-100">
+			<div>
+				<ul class="Lista">
+					<div class="card shadow-2-strong align-items-center" style="border: 1px solid #FFFFFF;"><h2>Sucursales<h2></div>
+					<div class="contenedor">
+						<div class="second card shadow-2-strong align-items-center sombra" style="border-radius: 1rem;">
+							<img class="img-efect" alt="Guayaquil" src="img/1.jpg" style="height: 80px; width: 80px; position: absolute; top: 20%;" tabindex="0" title="Guayaquil">
+							<li> <a href="factura.html" class="Guayaquil"><h3 class="mb-5" style="color: black; position: absolute; top: 60%; left: 28%;">Guayaquil</h3></a></li>
+						</div>
+						<div class="space"></div>
+						<div class="second card shadow-2-strong align-items-center sombra" style="border-radius: 1rem;">
+							<img class="img-efect" alt="Quito" src="img/2.jpg" style="height: 80px; width: 80px; position: absolute; top: 20%;" tabindex="0" title="Quito">
+							<li> <a href="factura.html" class="Quito"><h3 class="mb-5" style="color: black; position: absolute; top: 60%; left: 37%;">Quito</h3></a></li>
+						</div>
+						<div class="space"></div>
+						<div class="second card shadow-2-strong align-items-center sombra" style="border-radius: 1rem;">
+							<img class="img-efect" alt="Cuenca" src="img/3.jpg" style="height: 80px; width: 80px; position: absolute; top: 20%;" tabindex="0" title="Cuenca">
+							<li> <a href="factura.html" class="Cuenca"><h3 class="mb-5" style="color: black; position: absolute; top: 60%; left: 34%;">Cuenca</h3></a></li>
+						</div>
+						<div class="space"></div>
+						<div class="second card shadow-2-strong align-items-center sombra" style="border-radius: 1rem;">
+							<img class="img-efect" alt="Machala" src="img/4.jpg" style="height: 80px; width: 80px; position: absolute; top: 20%;" tabindex="0" title="Machala">
+							<li> <a href="factura.html" class="Machala"><h3 class="mb-5" style="color: black; position: absolute; top: 60%; left: 31%;">Machala</h3></a></li>
+						</div>
+					</div>
+				</div>
+			</ul>
+        </div>
     </section>
-
+	<footer class="" style="position: absolute; bottom: 0; width: 100%; background-color: #343a40; height: 150px;">
+		<section class="foot-space"></section>
+		<div class="container"><p class="m-0 text-center text-white" ><font class="m-0 text-center text-white" SIZE=5>Plataforma Web</></p></div>
+        <div class="container"><p class="m-0 text-center text-white" ><font class="m-0 text-center text-white" SIZE=4>Proyecto &copy;</></p></div>
+    </footer>
 </body>
 </html>

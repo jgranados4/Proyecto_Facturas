@@ -1,13 +1,16 @@
 *{
-    margin: 0%;
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
+/**/
 .cabecera{
     text-align: center;
-    background-color: black;
+    background-color: #343a40;
     color: aliceblue;
 }
 .cuadro{
-    border: 2px solid  black;
+    border: 2px solid black;
      margin-top: 15px;
 }
 .formulario{
@@ -20,4 +23,61 @@
 .table caption{
     margin-bottom: 5px;
 
+}
+/**/
+.contenedor {
+  background-color: #FFFFFF;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #FFFFFF;
+  text-align: left;
+}
+.contenedor-visible {
+  background-color: #FFFFFF;
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #000000;
+  text-align: left;
+}
+.header {
+    width: 100%;
+    background-color: white;
+    height: 30px;
+}
+.second {
+    width: 300px;
+    float: left;
+    height: 300px;
+    background-color: #FFFFFF;
+	border: 1px solid #000000;
+	
+}
+.foot-space {
+  background-color: #343a40;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+.space {
+    width: 50px;
+    float: left;
+    height: 300px;
+    background-color: #FFFFFF;
+	
+}
+.Lista {
+    list-style: none;
+	
+}
+.img-efect {
+	border-radius: 50px;
+}
+.sombra {
+  margin: 0px auto;
+  border: 1px solid #ccc;
+  box-shadow: 7px 7px 15px #592A08; 
+}
+
+.sombra:hover{
+	transform: scale(1.10);
 }
