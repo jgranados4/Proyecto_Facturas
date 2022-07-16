@@ -1,3 +1,4 @@
+//** llamamos a los elementos ID
 const formDetalle = document.getElementById("formDetalle");
 
 const inputFecha = document.getElementById("inputFecha");
@@ -10,8 +11,7 @@ const inputEstatura = document.getElementById("inputEstatura");
 const inputEconomico = document.getElementById("inputEconomico");
 const inputTotal=document.getElementById('inputTotal');
 const cuerpoTabla = document.getElementById("cuerpoTabla");
-let arreglo = [];
-//opcion
+let arreglo = [];// un arreglo para Implementar
 let arreglosexo = [
   {
     id: 1,
@@ -22,7 +22,7 @@ let arreglosexo = [
     nombre: "Mujer",
   },
 ];
-//La seleccion llenada
+
 const llenar = () => {
   arreglosexo.forEach((p) => {
     const opcion = document.createElement("option");
@@ -32,7 +32,7 @@ const llenar = () => {
   });
 };
 llenar();
-
+//Implementamos la seleccion
 const getNombreProductoById = (id) => {
   const objDetalle = arreglosexo.find((p) => {
     if (p.id == +id) {
@@ -58,22 +58,13 @@ const redistabla = () => {
         <td>${detalle.Economico}</td>
         <td>${detalle.Total}</td>
         `;
-    // let tdEliminar = document.createElement("td");
-    // let botonEliminar = document.createElement("button");
-    // botonEliminar.classList.add("btn","btn-danger");
-    // botonEliminar.innerText = "Eliminar";
-    // botonEliminar.onclick=()=>{
-    //   eliminarDetalleById (detalle.Cliente);
-    // }
-
-    // tdEliminar.appendChild(botonEliminar);
-    // fila.appendChild(tdEliminar)
     cuerpoTabla.appendChild(fila);
   });
 };
 
 formDetalle.onsubmit = (e) => {
-  e.preventDefault();
+  e.preventDefault();// No se carge la Pagina
+  //crear objetos
   const objDetalle = {
     Fecha: inputFecha.value,
     Nombre: inputNombre.value,
@@ -89,11 +80,4 @@ formDetalle.onsubmit = (e) => {
   redistabla();
 };
 
-// const eliminarDetalleById = (id) => {
-//   arregloDea = arreglo.filter((detalle) => {
-//     if (+id !== +detalle.Cliente) {
-//       return detalle;
-//     }
-//   });
-//   redistabla();
-// };
+

@@ -1,3 +1,4 @@
+//!Bloqueamos el  boton y cuando todos los input esten llenos habilitarlos
 function Habilitar() {
   const inputFecha = document.getElementById("inputFecha").value;
   const inputNombre = document.getElementById("inputNombre").value;
