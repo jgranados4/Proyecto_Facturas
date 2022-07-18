@@ -44,46 +44,46 @@
 						<div class="seconds  align-items-center">
 							<div class="contenedor">
 								<label for="">Numero de Cliente:</label>
-								<input type="number" name="NumeroCliente" id="inputCliente" min="1" max="10000" />
+								<input type="number" name="NumeroCliente" id="inputCliente" min="1" max="10000" required />
 							</div>
 							<div class="contenedor">
 								<label for="">Nombre y Apellido:</label>
-								<input type="text" name="Nombre" id="inputNombre" maxlength="20" />
+								<input type="text" name="Nombre" id="inputNombre" maxlength="20" required />
 							</div>
 							<div class="contenedor">
 								<label for="">Edad:</label>
-								<input type="number" name="Edad" id="inputEdad" min="10" max="1000" />
+								<input type="number" name="Edad" id="inputEdad" min="10" max="1000" required/>
 							</div>
 							<div class="contenedor">
 								<label for="">Sexo:</label>
-								<select name="" id="inputSexo" name="Sexo">
-									<option value="0">--seleccionar--</option>
+								<select name="" id="inputSexo" name="Sexo" required>
+									<option value="">--seleccionar--</option>
 									<option value="Hombre">Hombre</option>
 									<option value="Mujer">Mujer</option>
 								</select>
 							</div>
 							<div class="contenedor">
 								<label for="">Fecha:</label>
-								<input type="date" name="Fecha" id="inputFecha" />
+								<input type="date" name="Fecha" id="inputFecha" required />
 							</div>
 						</div>
 						<div class="seconds align-items-center">
 							<div class="contenedor">
 								<label for="">Etnia:</label>
-								<input type="text" name="Etnia" id="inputEtnia" maxlength="10"/>
+								<input type="text" name="Etnia" id="inputEtnia" maxlength="10" required/>
 							</div>
 							<div class="contenedor">
 								<label for="">Estatura:</label>
-								<input type="number" name="Estatura" id="inputEstatura"  step="any" min="1" max="100" />
+								<input type="number" name="Estatura" id="inputEstatura"  step="any" min="1" max="100" required/>
 							</div>
 							<div class="contenedor">
 								<label for="">Ingreso Economico:</label>
-								<input type="number" name="IngresoEconomico" id="inputEconomico" step="any" min="2" max="1000000"  />
+								<input type="number" name="IngresoEconomico" id="inputEconomico" step="any" min="2" max="1000000" required />
 							</div>
 							<div class="contenedor">
 								<label for="">Descuento y El total:</label>
-								<select name="" id="inputTotal">
-									<option value="0">--seleccionar--</option>
+								<select name="" id="inputTotal" required>
+									<option value="">--seleccionar--</option>
 									<option value="$540">$540</option>
 									<option value="$199.5">$199.5</option>
 									<option value="$80">$80</option>
@@ -93,7 +93,6 @@
 							</div>
 							<div class="card shadow-2-strong align-items-center" style="border: 1px solid #FFFFFF;">
 								<input class="btn btn-outline-dark sombra-tabla" style="height: 45px; width: 200px;" type="submit"  id="boton" disabled />
-								<input type="reset" value="Limpiar">
 							</div>
 						</div>
 					</fieldset>
@@ -131,5 +130,6 @@
     </footer>
     <script src="./js/validacion.js"></script>
     <script src="./js/form.js"></script>
+	<script src="./js/reset.js"></script>
   </body>
 </html>
