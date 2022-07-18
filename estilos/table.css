@@ -43,3 +43,6 @@ form input[type="submit"]:hover{
 table caption{
     font-size: 45px;
 }
+#reset{
+    margin-top: 13px;
+}

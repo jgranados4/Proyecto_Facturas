@@ -37,7 +37,7 @@ function Habilitar() {
   if (inputTotal == ""||inputTotal==null) {
     val++;
   }
-  if (val == 0) {
+  if (val === 0) {
     document.getElementById("boton").disabled = false;
   } else {
     document.getElementById("boton").disabled = true;
@@ -51,7 +51,7 @@ document.getElementById("inputEdad").addEventListener('keyup',Habilitar);
 document.getElementById("inputEtnia").addEventListener('keyup',Habilitar);
 document.getElementById("inputEstatura").addEventListener('keyup',Habilitar);
 document.getElementById("inputEconomico").addEventListener('keyup',Habilitar);
-document.getElementById("inputTotal").addEventListener('keyup',Habilitar);
+document.getElementById("inputTotal").addEventListener('change',Habilitar);
 document.getElementById("boton").addEventListener("click",()=>{
   console.log('llenado')
 });
