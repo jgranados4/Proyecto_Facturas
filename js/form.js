@@ -8,32 +8,33 @@ function Habilitar() {
   const inputEtnia = document.getElementById("inputEtnia").value;
   const inputEstatura = document.getElementById("inputEstatura").value;
   const inputEconomico = document.getElementById("inputEconomico").value;
+  const inputTotal=document.getElementById("inputTotal").value;
   let val = 0;
-  if (inputFecha == "") {
+  if (inputFecha == ""||inputFecha==null) {
     val++;
   }
-  if (inputNombre == "") {
+  if (inputNombre == ""||inputNombre==null) {
     val++;
   }
-  if (inputCliente == "") {
+  if (inputCliente == ""||inputCliente==null) {
     val++;
   }
-  if (inputSexo == "") {
+  if (inputSexo == ""||inputSexo==null) {
     val++;
   }
-  if (inputSexo == "") {
+  if (inputEdad == ""||inputEdad==null) {
     val++;
   }
-  if (inputEdad == "") {
+  if (inputEtnia == ""||inputEtnia==null) {
     val++;
   }
-  if (inputEtnia == "") {
+  if (inputEstatura == ""||inputEstatura==null) {
     val++;
   }
-  if (inputEstatura == "") {
+  if (inputEconomico == ""||inputEconomico==null) {
     val++;
   }
-  if (inputEconomico == "") {
+  if (inputTotal == ""||inputTotal==null) {
     val++;
   }
   if (val == 0) {
@@ -50,6 +51,7 @@ document.getElementById("inputEdad").addEventListener('keyup',Habilitar);
 document.getElementById("inputEtnia").addEventListener('keyup',Habilitar);
 document.getElementById("inputEstatura").addEventListener('keyup',Habilitar);
 document.getElementById("inputEconomico").addEventListener('keyup',Habilitar);
+document.getElementById("inputTotal").addEventListener('keyup',Habilitar);
 document.getElementById("boton").addEventListener("click",()=>{
   console.log('llenado')
 });

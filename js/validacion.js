@@ -1,6 +1,5 @@
 //** llamamos a los elementos ID
 const formDetalle = document.getElementById("formDetalle");
-
 const inputFecha = document.getElementById("inputFecha");
 const inputNombre = document.getElementById("inputNombre");
 const inputCliente = document.getElementById("inputCliente");
@@ -11,37 +10,9 @@ const inputEstatura = document.getElementById("inputEstatura");
 const inputEconomico = document.getElementById("inputEconomico");
 const inputTotal=document.getElementById('inputTotal');
 const cuerpoTabla = document.getElementById("cuerpoTabla");
+// capturamos el elemento boton
+const boton=document.getElementById("boton")
 let arreglo = [];// un arreglo para Implementar
-let arreglosexo = [
-  {
-    id: 1,
-    nombre: "Hombre",
-  },
-  {
-    id: 2,
-    nombre: "Mujer",
-  },
-];
-
-const llenar = () => {
-  arreglosexo.forEach((p) => {
-    const opcion = document.createElement("option");
-    opcion.value = p.id;
-    opcion.innerText = p.nombre;
-    inputSexo.appendChild(opcion);
-  });
-};
-llenar();
-//Implementamos la seleccion
-const getNombreProductoById = (id) => {
-  const objDetalle = arreglosexo.find((p) => {
-    if (p.id == +id) {
-      return p;
-    }
-  });
-  return objDetalle.nombre;
-};
-
 //agregar a la Tabla
 const redistabla = () => {
   cuerpoTabla.innerHTML = "";
@@ -51,7 +22,7 @@ const redistabla = () => {
         <td>${detalle.Fecha}</td>
         <td>${detalle.Nombre}</td>
         <td>${detalle.Cliente}</td>
-        <td>${getNombreProductoById(detalle.Sexo)}</td>
+        <td>${detalle.Sexo}</td>
         <td>${detalle.Edad}</td>
         <td>${detalle.Etnia}</td>
         <td>${detalle.Estatura}</td>
@@ -79,5 +50,4 @@ formDetalle.onsubmit = (e) => {
   arreglo.push(objDetalle);
   redistabla();
 };
-
 

@@ -22,24 +22,13 @@
     margin-bottom: 5px;
 }
 
-tr th{
-    background-color: black;
-    color: white;
-}
-tbody tr td:hover{
-    box-shadow: 1px 1px 2px 3px rgb(15, 15, 15);
-    text-shadow: 1px 1px 1px black;
-}
 
 /**/
 .reglas{
     margin-top: 13px;
     margin-bottom: 13px;
 }
-form {
-	background-color:#ccc;
-}
-form label{
+/* form label{
     display: inline-block;
     margin: 2px
 }
@@ -47,7 +36,7 @@ form input{
     display: inline-block;
     margin: 3px;
     padding: 3px;
-}
+} */
 form input[type="submit"]:hover{
     cursor: pointer;
 }
