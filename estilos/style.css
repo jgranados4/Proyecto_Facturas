@@ -15,8 +15,6 @@
   padding: 1rem;
   border: 1px solid #FFFFFF;
   text-align: left;
-  display: flex;
-  flex-direction: column;
 }
 .contenedor-visible {
   background-color: #FFFFFF;
